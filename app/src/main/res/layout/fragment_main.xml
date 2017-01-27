@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/kandungan_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        tools:showIn="@layout/activity_main"
+        tools:context="com.yahoo.maklumi.mathmudah.MainActivity"
+>
+
+
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mula!"
+            android:id="@+id/butangMula"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="80sp"
+            android:padding="40dp"
+            android:backgroundTint="#ff0eff31"
+            android:visibility="visible"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:id="@+id/relativeLayoutPermainan"
+    >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30s"
+                android:id="@+id/textViewPembilang"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:textSize="30sp"
+                android:background="#fffffb2e"
+                android:padding="10dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0/0"
+                android:id="@+id/textViewSkor"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:textSize="30sp"
+                android:padding="10dp"
+                android:background="#ffff8807"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="31 + 12"
+                android:id="@+id/textViewKiraKira"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="25sp"
+                android:padding="15dp"
+                android:textColor="#ff141414"/>
+        <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewKiraKira"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/gridLayout">
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_gravity="fill"
+                    android:tag="0"
+                    android:id="@+id/butang0"
+                    android:textSize="80sp"
+                    android:background="#ff444eff"
+            />
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_gravity="fill"
+                    android:tag="1"
+                    android:id="@+id/butang1"
+                    android:textSize="80sp"
+                    android:background="#ff11ff46"
+            />
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_gravity="fill"
+                    android:tag="2"
+                    android:id="@+id/butang2"
+                    android:textSize="80sp"
+                    android:background="#ffff09e4"
+            />
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_gravity="fill"
+                    android:tag="3"
+                    android:id="@+id/butang3"
+                    android:textSize="80sp"
+                    android:background="#ff0bfffd"
+            />
+        </GridLayout>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewKeputusan"
+                android:textSize="40sp"
+                android:layout_below="@+id/butangMainLagi"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Main Lagi"
+                android:id="@+id/butangMainLagi"
+                android:layout_below="@+id/gridLayout"
+                android:layout_alignStart="@+id/textViewKiraKira"
+                android:layout_marginTop="25dp"
+                android:visibility="invisible"/>
+    </RelativeLayout>
+</RelativeLayout>
+
